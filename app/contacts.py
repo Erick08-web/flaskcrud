@@ -70,3 +70,7 @@ def delete_contact(id):
     mysql.connection.commit()
     flash('Contact Removed Successfully')
     return redirect(url_for('contacts.Index'))
+
+@contacts.route('/test')
+def test():
+    return "Deploy automático funcionando 🚀"
